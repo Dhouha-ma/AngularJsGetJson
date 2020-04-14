@@ -1,0 +1,21 @@
+<html ng-app="ThirdApp">
+  <head>
+    <title>Second App</title>
+    <script src="https://code.angularjs.org/1.6.1/angular.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="myController">
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Age</th>
+      </tr>
+      <tr ng-repeat="friend in friends">
+        <td>{{friend.name}}</td>
+        <td>{{friend.phone}}</td>
+        <td>{{friend.age}}</td>
+      </tr>
+    </table>
+  </body>
+</html>
